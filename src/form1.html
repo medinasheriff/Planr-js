@@ -11,7 +11,7 @@
 
 <body>
     <div id="wrapper">
-        <header>Add/Edit campaign</header>
+        <h1>Add/Edit campaign</h1>
         <hr>
         <form>
             <div id="form">
@@ -36,14 +36,15 @@
                 </div>
             </div>
 
-            <button class="grey" onclick="location.href='index.html'">Cancel</button>
-            <button class="blue" onclick="location.href='page2.html'">Save</button>
+          
 
         </form>
 
+
         <div id="tabs">
-            <a href="#tab1">Location</a>
-            <a href="#tab2">Strategy</a>
+            <a href="#tab1" class="b">Location</a>
+            <a href="#tab2" class="b">Strategy</a>
+            <hr>
 
             <section id="tab1">
                 
@@ -76,9 +77,31 @@
                 </div>
             </section>
             <section id="tab2">
-                <p>startegy</p>
+                <div id="strategy">
+                    <div>
+                        <h4><input class="radio" type="radio">Use Fixed Post</h4>
+                        <p>select this strategy for field work<br> conducted within 2km of a Health<br> Facility (HF).</p>
+                    </div>
+                    <div>
+                        <h4><input class="radio" type="radio">Use Outreach Session</h4>
+                        <p>Select this strategy for field work<br>
+                            conducted 2 - 6km from a Health<br>
+                            Facility.</p>
+                    </div>
+                    <div>
+                        <h4><input class="radio" type="radio">Use Mobile Session</h4>
+                        <p>Select this strategy for field work<br>
+                            conducted 6km+ from a Health<br>
+                            Facility.</p>
+                    </div>
+                </div>
             </section>
         </div>
+    
+        
+        <button class="grey" onclick="location.href='index.html'">Cancel</button>
+        <button class="blue" onclick="location.href='page2.html'">Save</button>
+
 
 </body>
 

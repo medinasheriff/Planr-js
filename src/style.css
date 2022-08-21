@@ -1,0 +1,142 @@
+:root {
+    background-color: rgb(250, 250, 255);
+}
+
+#content {
+    background-color: rgb(214, 214, 250);
+    width: 99vw;
+    height: 85vh;
+    margin-left: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header:last-of-type {
+    margin-left: auto;
+}
+
+.grey {
+    background-color: grey;
+    height: 30px;
+    width: 120px;
+    border-radius: 5px;
+    float: right;
+    margin-left: auto;
+    border-color: rgb(124, 124, 128);
+    margin-top: 50vh;
+
+}
+
+.blue {
+    margin-top: 50vh;
+    height: 30px;
+    width: 120px;
+    border-radius: 5px;
+    float: right;
+    margin-left: auto;
+    margin-top: 50vh;
+    background-color: blue;
+    border-color: blue;
+    color: white;
+    margin-right: 2vw;
+}
+
+#btn {
+    background-color: blue;
+    height: 30px;
+    width: 120px;
+    color: white;
+    border-color: blue;
+    border-radius: 5px;
+    float: right;
+    margin-left: auto;
+    margin-top: 16px;
+}
+
+
+.content {
+    display: flex;
+    float: right;
+    padding-top: 35vh;
+    padding-right: 10vw;
+}
+
+p {
+    padding-left: 1vw;
+}
+
+h2 {
+    margin-left: 180px;
+}
+
+/*page 2*/
+table,
+th,
+td {
+    width: 70%;
+    background-color: white;
+    border-bottom: 1px solid rgb(219, 216, 216);
+    border-radius: 3px;
+    padding: 4px 12px;
+}
+
+.items {
+    padding-top: 3vh;
+    padding-left: 29%;
+    margin:
+}
+
+.field {
+    margin: 35px;
+}
+
+.input {
+    width: 20vw;
+    height: 5vh;
+    border: 1px solid rgb(216, 209, 209);
+    border-radius: 5px;
+}
+
+select:invalid {
+    color: gray;
+}
+
+.start {
+    float: left;
+    width: 50%;
+}
+
+.end {
+    display: flex;
+    width: 50%;
+}
+
+
+label {
+    display: block;
+    margin-left: 5vw;
+}
+
+#form {
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+}
+
+#location {
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+
+}
+
+#tabs section {
+    display: none;
+}
+
+#tabs section:target {
+    display: flex;
+}

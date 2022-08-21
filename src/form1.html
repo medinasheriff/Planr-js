@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>Add/Edit campaign</header>
+        <hr>
+        <form>
+            <div id="form">
+                <div class="name">
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Campaign Name">
+                </div>
+                <div class="type">
+                    <label for="type">Campaign Type</label>
+                    <select required>
+                        <option value="" disabled selected hidden>Campaign Type</option>
+                        <option value="RI">Routine Immunization</option>
+                        <option value="Covid">Covid</option>
+                    </select>
+                </div>
+                <div class="duration">
+                    <label for="duration">Duration</label>
+
+                    <input type="date" placeholder="Start Date">
+
+                    <input type="date" placeholder="End Date">
+                </div>
+            </div>
+
+            <button class="grey" onclick="location.href='index.html'">Cancel</button>
+            <button class="blue" onclick="location.href='page2.html'">Save</button>
+
+        </form>
+
+        <div id="tabs">
+            <a href="#tab1">Location</a>
+            <a href="#tab2">Strategy</a>
+
+            <section id="tab1">
+                
+                <div><label for="type">STATE</label>
+                    <select required>
+                        <option value="" disabled selected hidden>State</option>
+                        <option value="RI">Borno</option>
+                        <option value="Covid">Kano</option>
+                        <option value="Covid">Yobe</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="type">LGA</label>
+                    <select required>
+                        <option value="" disabled selected hidden>LGA</option>
+                        <option value="RI">MMC</option>
+                        <option value="Covid">Danboa</option>
+                        <option value="Covid">Gwarzo</option>
+                        <option value="Covid">Gwale</option>
+                        <option value="Covid">Gubiya</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="type">WARD</label>
+                    <select required>
+                        <option value="" disabled selected hidden>Ward</option>
+                        <option value="RI">Ward 1</option>
+                        <option value="Covid">Ward 2</option>
+                    </select>
+                </div>
+            </section>
+            <section id="tab2">
+                <p>startegy</p>
+            </section>
+        </div>
+
+</body>
+
+</html>

@@ -1,3 +1,4 @@
+//js for status colors//
 let failed = document.getElementsByClassName('red');
 failed[0].style.color = "red";
 failed[1].style.color = "red";

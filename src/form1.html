@@ -10,10 +10,14 @@
 </head>
 
 <body>
+    <!--hearder section-->
     <div id="wrapper">
         <h1>Add/Edit campaign</h1>
         <hr>
-        <form>
+        
+        
+        <!--form section-->
+         <form>
             <div id="form">
                 <div class="name">
                     <label for="name">Name</label>
@@ -36,11 +40,9 @@
                 </div>
             </div>
 
-          
+          </form>
 
-        </form>
-
-
+           <!--location content section-->
         <div id="tabs">
             <a href="#tab1" class="b">Location</a>
             <a href="#tab2" class="b">Strategy</a>
@@ -51,9 +53,9 @@
                 <div><label for="type">STATE</label>
                     <select required>
                         <option value="" disabled selected hidden>State</option>
-                        <option value="RI">Borno</option>
-                        <option value="Covid">Kano</option>
-                        <option value="Covid">Yobe</option>
+                        <option value="borno">Borno</option>
+                        <option value="kano">Kano</option>
+                        <option value="yobe">Yobe</option>
                     </select>
                 </div>
                 <div>
@@ -76,6 +78,8 @@
                     </select>
                 </div>
             </section>
+
+            <!--strategy content section-->
             <section id="tab2">
                 <div id="strategy">
                     <div>
@@ -98,10 +102,10 @@
             </section>
         </div>
     
-        
+        <!--buttons section-->
         <button class="grey" onclick="location.href='index.html'">Cancel</button>
         <button class="blue" onclick="location.href='page2.html'">Save</button>
-
+    </div>
 
 </body>
 

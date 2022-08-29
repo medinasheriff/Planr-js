@@ -21,26 +21,40 @@
             <div id="form">
                 <div class="name">
                     <label for="name">Name</label>
-                    <input type="text" placeholder="Campaign Name">
+                    <input type="text" class="campaign_name" placeholder="Campaign Name">
                 </div>
-                <div class="type">
+                <div class="type vr" >
                     <label for="type">Campaign Type</label>
-                    <select required>
+                    <select class="campaign_type" required>
                         <option value="" disabled selected hidden>Campaign Type</option>
-                        <option value="RI">Routine Immunization</option>
+                        <option value="Routine Immunization">Routine Immunization</option>
                         <option value="Covid">Covid</option>
                     </select>
                 </div>
-                <div class="duration">
+                <div class="duration vr">
                     <label for="duration">Duration</label>
 
-                    <input type="date" placeholder="Start Date">
+                    <input class="duration_start_date" type="date" placeholder="Start Date">
 
                     <input type="date" placeholder="End Date">
                 </div>
             </div>
 
           </form>
+
+          <table>
+            <thead>
+            <tr>
+                <th>CAMPAIGN NAME</th>
+                <th>TYPE</th>
+                <th>STATUS</th>
+            </tr>
+        </thead>
+        
+            <tbody id="result">
+
+        </tbody>
+        </table>
 
            <!--location content section-->
         <div id="tabs">
@@ -104,9 +118,9 @@
     
         <!--buttons section-->
         <button class="grey" onclick="location.href='index.html'">Cancel</button>
-        <button class="blue" onclick="location.href='page2.html'">Save</button>
+        <button class="blue" onclick="addData()">Save</button>
     </div>
-
+    <script src="../script2.js"></script>
 </body>
 
 </html>

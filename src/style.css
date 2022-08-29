@@ -176,3 +176,11 @@ hr {
 #tab1 {
     margin-top: 6vh;
 }
+
+.vr {
+    display: inline-block;
+    border-left: 1px solid rgb(212, 208, 208);
+    margin:10px 30px ;
+    padding-left:10vw ;
+    height: 50px;
+}

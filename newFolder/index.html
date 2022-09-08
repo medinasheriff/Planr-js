@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    <!--First page-->
+    <div class="container">
+        <header>
+            <h2> Manage Campaign</h2>
+            <button id="btn" class="addCampaign">Add Campaign</button>
+        </header>
+        <div class="content-container">
+            <div class="content">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa_nptf_n5-cUz2R7p0i-xXsnp24vpjeIiYA&usqp=CAU" alt="An image of a journal and pen" height="80">
+                <p>
+                    No campaigns found. <a href="#"><span class="addCampaign">Add Campaign</span></a> to begin recording<br> 
+                    and managing campaigns.
+                </p>
+             
+            </div>
+               <!--Table page-->
+            <div class="tablePage">
+                <input type="text" class="search" name="search" placeholder="search campaign">
+
+            <table>
+               
+                <thead>
+                    <tr>
+                        <th>CAMPAIGN NAME</th>
+                        <th>TYPE</th>
+                        <th>STATUS</th>
+                    </tr>
+                </thead>
+            
+                <tbody id="result"></tbody>
+            </table>
+        </div>
+        </div>
+
+           <!--Modal/form page-->
+       <div class="overlay">
+           <div id="wrapper">
+                <h1>Add/Edit campaign</h1>
+                <hr>
+
+                <form>
+                    <div id="form">
+                        <div class="name">
+                            <label for="name">Name</label>
+                            <input type="text" class="campaign_name" placeholder="Campaign Name">
+                        </div>
+                        <div class="type vr" >
+                            <label for="type">Campaign Type</label>
+                            <select class="campaign_type" required>
+                                <option value="" disabled selected hidden>Campaign Type</option>
+                                <option value="Routine Immunization">Routine Immunization</option>
+                                <option value="Covid">Covid</option>
+                                <option value="CV">Cervical Cancer</option>
+                                
+                            </select>
+                        </div>
+                        <div class="duration vr">
+                            <label for="duration">Duration</label>
+        
+                            <input class="duration_start_date" type="date" placeholder="Start Date">
+        
+                            <input type="date" placeholder="End Date">
+                        </div>
+                    </div>
+                </form>
+
+                <!--location content section-->
+                <div id="tabs">
+                    <a href="#tab1" class="b">Location</a>
+                    <a href="#tab2" class="b">Strategy</a>
+                    <hr>
+    
+                    <section id="tab1">
+                        
+                        <div class="input-wrapper">
+                            <label for="type" class="form-label">STATE</label>
+                            <select required>
+                                <option value="" disabled selected hidden>State</option>
+                                <option value="borno">Borno</option>
+                                <option value="kano">Kano</option>
+                                <option value="yobe">Yobe</option>
+                            </select>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="type" class="form-label">LGA</label>
+                            <select required>
+                                <option value="" disabled selected hidden>LGA</option>
+                                <option value="mmc">MMC</option>
+                                <option value="damboa">Danboa</option>
+                                <option value="gwarzo">Gwarzo</option>
+                                <option value="gwale">Gwale</option>
+                                <option value="gubiya">Gubiya</option>
+                            </select>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="type" class="form-label">WARD</label>
+                            <select required>
+                                <option value="" disabled selected hidden>Ward</option>
+                                <option value="wd1">Ward 1</option>
+                                <option value="wd2">Ward 2</option>
+                                <option value="wd3">Ward 3</option>
+                                <option value="wd4">Ward 4</option>
+                                <option value="wd5">Ward 5</option>
+                            </select>
+                        </div>
+                    </section>
+
+                    <!--strategy content section-->
+                    <section id="tab2">
+                        <div id="strategy">
+                            <div>
+                                <h4><input class="radio" type="radio">Use Fixed Post</h4>
+                                <p>select this strategy for field work<br> conducted within 2km of a Health<br> Facility (HF).</p>
+                            </div>
+                            <div>
+                                <h4><input class="radio" type="radio">Use Outreach Session</h4>
+                                <p>Select this strategy for field work<br>
+                                    conducted 2 - 6km from a Health<br>
+                                    Facility.</p>
+                            </div>
+                            <div>
+                                <h4><input class="radio" type="radio">Use Mobile Session</h4>
+                                <p>Select this strategy for field work<br>
+                                    conducted 6km+ from a Health<br>
+                                    Facility.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            
+                <!--buttons section-->
+                <div class="btn-container">
+                    <button class="grey cancel" onclick="location.href='index.html'">Cancel</button>
+                    <button class="blue save" onclick="addData()">Save</button>
+                </div> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
